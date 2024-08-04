@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: aquamarine;
+}
+
+.container {
+    display: flex;
+    justify-content:space-evenly;
+    padding: 20px;
+    /*margin-left: 25%;*/
+    
+}
+
+.products{
+    border: 10px solid #ccc;
+    padding: 20px;
+    width: 30%;
+    
+}
+.cart{
+    background-color: cadetblue;
+    padding: 20px;
+    width: 30%;
+  
+}
+.product {
+    
+    display: flex;
+    background-color:rgb(214, 132, 17);
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.total{
+    margin-left: 12%;
+}
+button {
+    margin: 0 10px;
+}

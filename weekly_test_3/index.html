@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="products">
+            <center><h2>Products</h2></center>
+            <div class="product">
+               <span>Product-1</span>
+                <span>100</span>
+                <button onclick="updateCart('product1', -1)">-</button>
+                <span id="quantity-product1">2</span>
+                <button onclick="updateCart('product1', 1)">+</button>
+            </div>
+            <div class="product">
+                <span>Product-2</span>
+                <span>200</span>
+                <button onclick="updateCart('product2', -1)">-</button>
+                <span id="quantity-product2">3</span>
+                <button onclick="updateCart('product2', 1)">+</button>
+            </div>
+            
+            <div class="product">
+                <span>Product-3</span>
+                <span>300</span>
+                <button onclick="updateCart('product3', -1)">-</button>
+                <span id="quantity-product3">0</span>
+                <button onclick="updateCart('product3', 1)">+</button>
+            </div>
+        </div>
+        <div class="cart">
+            <center><h2>Cart</h2></center>
+            <div id="cart-items">
+                <div>Product-1 <span id="cart-product1">2</span> × 100</div>
+                <br>
+                <div>Product-2 <span id="cart-product2">3</span> × 200</div>
+            </div>
+            <br><br>
+            <div class="total">Total: <span id="total">800</span></div>
+        </div>
+    </div>
+</center>
+    <script src="script.js"></script>
+</body>
+</html>
